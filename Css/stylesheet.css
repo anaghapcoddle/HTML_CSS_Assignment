@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    padding: 13px;
+    padding: 13px 13px 41px 13px;
     display: flex;
 }
 
@@ -25,7 +25,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
-    padding: 15px;
+    padding: 3px 15px 15px 15px;
     font-size: 22px;
 }
 
@@ -69,18 +69,18 @@ nav a {
 
 #textbox {
     background-color: #5a6e79;
-    padding: 35px 90px;
+    padding: 44px 118px;
     display: inline-block;
     color: white;
     position: absolute;
-    top: 11%;
+    top: 16%;
     z-index: 1;
 }
 
 #fontbig {
-    font-size: 34px;
+    font-size: 39px;
     font-family: 'Crete Round', serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #borderbox {
@@ -149,7 +149,7 @@ nav a {
 #benefits {
     display: flex;
     align-items: center;
-    padding: 11% 7% 11% 9%;
+    padding: 8% 7% 8% 11%;
 }
 
 
@@ -190,7 +190,7 @@ nav a {
 
 .box {
     display: flex;
-    padding: 30px 71px;
+    padding: 30px 75px;
 }
 
 .text {
@@ -217,7 +217,7 @@ nav a {
 #weprovide1 {
     display: flex;
     justify-content: center;
-    padding: 5% 0;
+    padding: 8% 0% 5% 0%;
 }
 
 @media(max-width:700px) {
@@ -344,7 +344,7 @@ nav a {
 }
 
 .part1 {
-    padding-right: 9%;
+    padding-right: 14%;
 }
 
 
@@ -355,12 +355,12 @@ nav a {
 
 #whatour {
     display: flex;
-    padding-top: 6%;
+    padding: 10% 0% 0% 0%;
 }
 
 .whatourtext {
     flex: 1;
-    padding-left: 160px;
+    padding-left: 156px;
 }
 
 .quotes {
@@ -440,7 +440,7 @@ nav a {
 
 .subscribe {
     text-align: center;
-    padding-bottom: 5%;
+    padding: 2% 0% 5% 0%;
 }
 
 .subscribehead {
