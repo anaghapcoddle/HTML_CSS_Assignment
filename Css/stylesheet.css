@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    padding: 13px 13px 41px 13px;
+    padding: 13px 13px 50px 0px;
     display: flex;
 }
 
@@ -42,7 +42,7 @@ nav a {
     margin-left: auto;
     font-size: 16px;
     text-decoration: none;
-    padding: 22px 38px 0px 0px;
+    padding: 22px 54px 0px 0px;
     display: flex;
 }
 
@@ -51,31 +51,46 @@ nav a {
     padding-left: 64%;
 }
 
+@media(max-width: 700px) {
+
+    .luxtitle {
+        color: black;
+        padding: 15px 0px 15px 0px;
+        font-size: 22px;
+    }
+
+    .navdiv {
+        padding-left: 0%
+    }
+
+    .navigationicons {
+        margin-left: auto;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 22px 0px 0px 0px;
+    }
+
+    .navigationicons a {
+        color: black;
+        padding-left: 0%
+    }
+
+}
+
 #banner {
     position: relative;
 }
 
-#bannerimage {
-    height: 566px;
-    width: 968px;
-}
-
-#bannerimagecontainer {
-    padding-left: 26.3%;
-    display: inline-block;
-    position: relative;
-    height: auto;
-}
-
-#textbox {
+.textbox {
     background-color: #5a6e79;
-    padding: 44px 118px;
+    padding: 3% 7.5% 3% 5.5%;
     display: inline-block;
     color: white;
     position: absolute;
     top: 16%;
     z-index: 1;
 }
+
 
 #fontbig {
     font-size: 39px;
@@ -89,7 +104,18 @@ nav a {
     padding: 40px;
     position: absolute;
     top: 88%;
-    left: 24.5%;
+    left: 327px;
+}
+
+#bannerimage {
+    height: 576px;
+    width: 1068px;
+}
+
+.bannerimagecontainer {
+    display: inline-block;
+    position: relative;
+    left: 350px;
 }
 
 #boxwitharrow {
@@ -97,33 +123,44 @@ nav a {
     display: inline-block;
     padding: 36px 52px;
     position: absolute;
-    left: 91%;
-    top: 87%;
+    top: 500px;
+    right: 85px;
     color: white;
 }
 
 @media(max-width: 700px) {
+
+    #banner {
+        position: relative;
+        display: flex;
+    }
+
     #textbox {
-        padding: 0% 1%;
+        padding: 3% 7%;
+        ;
         position: absolute;
         top: 5%;
     }
 
     #fontbig {
-        font-size: 58%;
+        font-size: 92%;
     }
 
-    #textboxsmall {
-        font-size: 23%;
+    .textboxsmall {
+        font-size: 53%;
         line-height: 1.3;
     }
 
-    #im1 {
+    #fontsmall {
+        font-size: 16px;
+    }
+
+    #bannerimage {
         height: 100%;
         width: 100%;
     }
 
-    #im1div {
+    #bannerimagecontainer {
         padding-left: 15%;
     }
 
@@ -132,16 +169,14 @@ nav a {
         position: absolute;
         padding: 2%;
         left: 19%;
-        top: 88%;
+        bottom: 10%;
     }
 
-    #box2 {
-        padding: 0% 1.5% 1.0% 1.5%;
-        top: 92%;
-        left: 90%;
+    #boxwitharrow {
+        margin-left: 0;
     }
 
-    #box2 fa-solid {
+    #boxwitharrow fa-solid {
         font-size: 86%;
     }
 }
@@ -149,7 +184,7 @@ nav a {
 #benefits {
     display: flex;
     align-items: center;
-    padding: 8% 7% 8% 11%;
+    padding: 11% 7% 8% 0%;
 }
 
 
@@ -183,14 +218,25 @@ nav a {
     }
 }
 
-#grid {
+.grid {
     display: flex;
-    justify-content: center;
 }
 
 .box {
     display: flex;
-    padding: 30px 75px;
+    justify-content: center;
+}
+
+.boxleft {
+    margin-right: auto;
+}
+
+.boxcenter {
+    padding-right: 20%;
+}
+
+.boxright {
+    margin-left: auto;
 }
 
 .text {
@@ -199,7 +245,7 @@ nav a {
 
 .heading {
     font-weight: bold;
-    font-size: 140%;
+    font-size: 174%;
 }
 
 @media(max-width:700px) {
@@ -209,15 +255,13 @@ nav a {
     }
 }
 
-#weprovide1image {
-    height: 100%;
-    width: 30%;
+.weprovide1 {
+    display: flex;
+    padding: 8% 0% 5% 0%;
 }
 
-#weprovide1 {
-    display: flex;
-    justify-content: center;
-    padding: 8% 0% 5% 0%;
+#weprovide1image {
+    width: 45%;
 }
 
 @media(max-width:700px) {
@@ -234,17 +278,18 @@ nav a {
 }
 
 #weprovtext {
-    padding-left: 4%;
+    margin-left: auto;
     position: relative;
 }
 
 .weprovhead {
-    font-size: 33px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .weprovsub {
     font-weight: 500;
+    font-size: 15px;
     color: #5a6e79;
     font-family: 'Poppins', sans-serif;
 }
@@ -257,7 +302,8 @@ nav a {
 
 .digit {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 55px;
+    padding-bottom: 2%;
 }
 
 .numbers {
@@ -278,24 +324,15 @@ nav a {
     align-items: center;
 }
 
-#arr {
+#arrowimage {
     width: 38px;
     position: absolute;
-    left: 23.5%;
+    left: 17.5%;
 }
 
-
-#weprovide2 {
+.weprovide2 {
     display: flex;
-    justify-content: center;
 }
-
-#weprovide2image {
-    height: 535px;
-    width: 428px;
-    padding-top: 45px;
-}
-
 
 .circle-container {
     display: flex;
@@ -304,6 +341,7 @@ nav a {
     justify-content: center;
     justify-content: space-around;
     height: 370px;
+    height: 412px;
 }
 
 .circle {
@@ -331,45 +369,52 @@ nav a {
 }
 
 .bulletcontent1 {
-    padding: 5% 0% 0% 0%;
+    padding: 4% 0% 0% 0%;
 }
 
 .bulletcontent2 {
-    padding: 16% 0% 0% 0%;
+    padding: 10% 0% 0% 0%;
 }
 
 
 .bulletcontent3 {
-    padding: 15% 0% 0% 0%;
+    padding: 10.5% 0% 0% 0%;
 }
-
-.part1 {
-    padding-right: 14%;
-}
-
 
 .bullettext {
     padding-left: 30px;
 }
 
-
-#whatour {
-    display: flex;
-    padding: 10% 0% 0% 0%;
+.bulletsubtext{
+    font-size: 105%;
+    color: #5a6e79;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
-.whatourtext {
-    flex: 1;
-    padding-left: 156px;
+.part2 {
+    margin-right: 0;
+}
+
+
+#weprovide2image {
+    height: 642px;
+    padding-top: 50px;
+}
+
+.whatour {
+    display: flex;
+    padding: 9% 0% 1% 0%;
+    align-items: center;
+}
+
+
+.whatouricon {
+    margin-left: auto;
 }
 
 .quotes {
     font-size: 2em;
-}
-
-#whatouricon {
-    padding-right: 170px;
-    padding-top: 35px;
 }
 
 .iconclr1 {
@@ -382,14 +427,14 @@ nav a {
 
 .quotecontainer {
     display: flex;
-    padding: 70px 160px;
+    padding: 70px 0px;
 }
 
 .quotebox {
     flex: 1;
     background-color: #5a6e79;
     color: white;
-    padding: 5% 4%;
+    padding: 5% 8%;
 }
 
 .space {
@@ -447,6 +492,7 @@ nav a {
     font-weight: 900;
 }
 
+
 .footer {
     position: relative;
     width: 100%;
@@ -492,6 +538,7 @@ nav a {
     color: #5a6e79;
     font-family: 'Poppins', sans-serif;
     font-size: 85%;
+    font-weight: 500;
 }
 
 .footerfont {
