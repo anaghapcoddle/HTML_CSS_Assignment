@@ -1,6 +1,5 @@
 body {
     margin: 0%;
-
 }
 
 .container {
@@ -34,6 +33,14 @@ nav a {
     padding-left: 25%
 }
 
+@media(max-width: 700px) {
+    .navdiv {
+        padding-left: 0%;
+        position: relative;
+        top: 30px;
+        display: flex;
+    }
+}
 
 #headerfont {
     font-size: 15px;
@@ -60,9 +67,9 @@ nav a {
         font-size: 22px;
     }
 
-    .navdiv {
+    /* .navdiv {
         padding-left: 0%
-    }
+    } */
 
     .navigationicons {
         margin-left: auto;
@@ -176,6 +183,12 @@ nav a {
     }
 }
 
+@media(max-width: 700px) {
+    .bannerimagecontainer {
+        left: 350px
+    }
+}
+
 #benefits {
     display: flex;
     align-items: center;
@@ -203,7 +216,7 @@ nav a {
     }
 
     #hrline {
-        height: 1.5px;
+        height: 2px;
         width: 43px;
     }
 
@@ -352,7 +365,7 @@ nav a {
 #arrowimage {
     width: 38px;
     position: absolute;
-    left: 17.5%;
+    left: 18.5%;
 }
 
 @media(max-width:700px) {
@@ -363,8 +376,8 @@ nav a {
 
     #arrowimage {
         width: 24px;
-        position: absolute;
-        left: 29%;
+        position: relative;
+        left: -1.5%;
     }
 }
 
@@ -451,15 +464,15 @@ nav a {
     padding-top: 50px;
 }
 
-@media(max-width:700px){
-.part2{
-    margin-right: auto;
-}
+@media(max-width:700px) {
+    .part2 {
+        margin-right: auto;
+    }
 
-#weprovide2image {
-    height: auto;
-    width: 70%;
-}
+    #weprovide2image {
+        height: auto;
+        width: 70%;
+    }
 }
 
 .whatour {
@@ -472,11 +485,11 @@ nav a {
     margin-left: auto;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
     .whatour {
         padding: 9% 4% 4% 4%;
     }
-    
+
 }
 
 .iconclr1 {
@@ -545,12 +558,12 @@ nav a {
     font-size: 85%;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
     .quotecontainer {
         display: flex;
         flex-direction: column;
         padding: 3%;
-    } 
+    }
 
     .space {
         height: 10px;
@@ -566,7 +579,7 @@ nav a {
     font-weight: 900;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
     .subscribe {
         padding: 6% 0% 5% 0%;
     }
@@ -577,7 +590,6 @@ nav a {
     font-family: 'Poppins', sans-serif;
     font-size: 85%;
     font-weight: 500;
-    padding-top: 2.5%;
 }
 
 .footer {
@@ -594,7 +606,7 @@ nav a {
     top: -18px;
     display: flex;
     width: 50%;
-    height: 13%;
+    height: 15%;
     text-align: center;
     align-items: center;
     box-shadow: 6px 5px 8px #f6f6f6 inset;
@@ -604,7 +616,7 @@ nav a {
     padding-left: 30px;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
     .textgrey {
         font-size: 50%;
         padding-bottom: 5%;
@@ -657,12 +669,13 @@ nav a {
     font-size: 14px;
 }
 
-.footerlinks{
+.footerlinks {
     display: flex;
     flex-direction: row;
+    padding: 8% 0%;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
 
     #sub {
         right: 39px;
@@ -682,7 +695,7 @@ nav a {
         font-size: 80%;
     }
 
-    .footerlinks{
+    .footerlinks {
         display: flex;
         flex-direction: column;
         padding-top: 14px;
