@@ -67,10 +67,6 @@ nav a {
         font-size: 22px;
     }
 
-    /* .navdiv {
-        padding-left: 0%
-    } */
-
     .navigationicons {
         margin-left: auto;
         font-size: 16px;
@@ -183,9 +179,21 @@ nav a {
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1000px) {
     .bannerimagecontainer {
-        left: 350px
+        left: 0px
+    }
+
+    #bannerimage {
+        width: 100%;
+    }
+
+    #borderbox {
+        display: none;
+    }
+
+    #boxwitharrow {
+        display: none;
     }
 }
 
@@ -212,17 +220,23 @@ nav a {
 @media(max-width: 700px) {
 
     #benefits {
-        padding: 17% 0% 11% 8%;
+        padding: 17% 0% 8% 8%;
     }
 
     #hrline {
-        height: 2px;
+        height: 2.5px;
         width: 43px;
     }
 
     #benefitstext {
-        font-size: 100%;
+        font-size: 21px;
         padding-left: 5.5%;
+    }
+}
+
+@media(max-width: 1000px) {
+    #benefits {
+        padding: 8% 0% 11% 6%;
     }
 }
 
@@ -273,6 +287,16 @@ nav a {
 
     .gridsmallfont {
         font-size: 83%;
+    }
+}
+
+@media(max-width:1000px) {
+    .box {
+        flex: 1;
+    }
+
+    .boxcenter {
+        padding-right: 0%;
     }
 }
 
@@ -349,6 +373,16 @@ nav a {
     }
 }
 
+@media(max-width:1000px) {
+    .weprovide1 {
+        padding: 92px 22px;
+    }
+
+    #weprovtext {
+        padding-left: 4%;
+    }
+}
+
 #button1 {
     background-color: white;
     color: #5a6e79;
@@ -376,6 +410,13 @@ nav a {
 
     #arrowimage {
         width: 24px;
+        position: relative;
+        left: -3.5%;
+    }
+}
+
+@media(max-width:1000px) {
+    #arrowimage {
         position: relative;
         left: -1.5%;
     }
@@ -427,7 +468,6 @@ nav a {
     padding: 10% 0% 0% 0%;
 }
 
-
 .bulletcontent3 {
     padding: 10.5% 0% 0% 0%;
 }
@@ -455,6 +495,19 @@ nav a {
     }
 }
 
+@media(max-width:1000px) {
+    .weprovide2 {
+        padding: 20px 22px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bulletsubtext {
+        font-size: 85%;
+    }
+}
+
 .part2 {
     margin-right: 0;
 }
@@ -466,12 +519,18 @@ nav a {
 
 @media(max-width:700px) {
     .part2 {
-        margin-right: auto;
+        margin-left: 0;
     }
 
     #weprovide2image {
         height: auto;
         width: 70%;
+    }
+}
+
+@media(max-width:1000px) {
+    .part2 {
+        margin-right: auto;
     }
 }
 
@@ -489,7 +548,12 @@ nav a {
     .whatour {
         padding: 9% 4% 4% 4%;
     }
+}
 
+@media(max-width:1000px) {
+    .whatour {
+        padding: 9% 4% 4% 4%;
+    }
 }
 
 .iconclr1 {
@@ -503,6 +567,10 @@ nav a {
 .quotecontainer {
     display: flex;
     padding: 70px 0px;
+}
+
+.quotecontainer i {
+    color: white;
 }
 
 .quotebox {
@@ -626,6 +694,28 @@ nav a {
         flex-direction: column;
         height: 4%;
     }
+
+    #entertext {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width:1000px) {
+    .textgrey {
+        padding-bottom: 5%;
+    }
+
+    .enter {
+        flex-direction: column;
+        height: 4%;
+        top: -27px;
+        width: 78%;
+    }
+
+    #entertext {
+        padding-top: 2%;
+        padding-right: 61%;
+    }
 }
 
 #sub {
@@ -676,23 +766,15 @@ nav a {
 }
 
 @media(max-width:700px) {
-
     #sub {
         right: 39px;
         top: 24px;
-        font-size: 46%;
+        font-size: 88%;
         padding: 2px 18px;
-    }
-
-    #entertext {
-        padding-left: 30px;
     }
 
     .footerfont {
         padding: 29px 55px 0px 55px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: lighter;
-        font-size: 80%;
     }
 
     .footerlinks {
@@ -703,7 +785,20 @@ nav a {
 
     .luxtext {
         padding-top: 13px;
-        color: #bbbbbb;
         padding-bottom: 13px;
+    }
+}
+
+@media(max-width:1000px) {
+    #sub {
+        right: 26px;
+        top: 14px;
+        font-size: 87%;
+        padding: 1px 17px
+    }
+    .footerlinks {
+        display: flex;
+        flex-direction: column;
+        padding-top: 14px;
     }
 }
