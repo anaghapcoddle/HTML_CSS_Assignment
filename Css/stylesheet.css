@@ -1,51 +1,34 @@
 body {
     margin: 0%;
 }
-
 .container {
     max-width: 1350px;
     margin: 0px auto;
 }
-
 header {
     padding: 13px 13px 50px 0px;
     display: flex;
 }
-
-.luxtitle {
+.luxteriortitle {
     color: black;
     padding: 15px 15px 15px 0px;
     font-size: 22px;
 }
-
 nav li {
     display: inline;
 }
-
 nav a {
     text-decoration: none;
     color: black;
     padding: 3px 15px 15px 15px;
     font-size: 22px;
 }
-
-.navdiv {
+.navigationbardiv {
     padding-left: 25%
 }
-
-@media(max-width: 700px) {
-    .navdiv {
-        padding-left: 0%;
-        position: relative;
-        top: 30px;
-        display: flex;
-    }
-}
-
 #headerfont {
     font-size: 15px;
 }
-
 .navigationicons {
     margin-left: auto;
     font-size: 16px;
@@ -53,132 +36,113 @@ nav a {
     padding: 22px 54px 0px 0px;
     display: flex;
 }
-
 .navigationicons a {
     color: black;
     padding-left: 64%;
 }
-
 @media(max-width: 700px) {
-
-    .luxtitle {
+    .luxteriortitle {
         color: black;
         padding: 15px 0px 15px 0px;
         font-size: 22px;
     }
-
-    .navigationicons {
-        margin-left: auto;
-        font-size: 16px;
-        text-decoration: none;
-        padding: 22px 0px 0px 0px;
+    .navigationbardiv {
+        padding-left: 0%;
     }
-
-    .navigationicons a {
-        color: black;
-        padding-left: 0%
+    nav li {
+        display: block;
     }
+    header {
+        padding: 0% 5%;
+    }
+    .headersection{
+        flex: 1;
+    }
+}
 
+@media(max-width: 1500px) {
+    .navigationbardiv {
+        padding-left: 0%;
+        margin: auto;
+    }
 }
 
 #banner {
     position: relative;
 }
-
 .textbox {
     background-color: #5a6e79;
     padding: 3% 7.5% 3% 5.5%;
-    display: inline-block;
     color: white;
     position: absolute;
     top: 16%;
     z-index: 1;
 }
-
-
 #fontbig {
     font-size: 39px;
     font-family: 'Crete Round', serif;
     font-weight: 600;
 }
-
 #borderbox {
     border-style: solid;
-    display: inline-block;
     padding: 40px;
     position: absolute;
     top: 88%;
     left: 327px;
 }
-
 #bannerimage {
     height: 576px;
     width: 1068px;
 }
-
 .bannerimagecontainer {
-    display: inline-block;
     position: relative;
     left: 350px;
 }
-
 #boxwitharrow {
     background-color: #5a6e79;
-    display: inline-block;
     padding: 36px 52px;
     position: absolute;
     top: 500px;
     right: 85px;
     color: white;
 }
-
 @media(max-width: 700px) {
-
     #banner {
         position: relative;
         display: flex;
     }
-
     .textbox {
         padding: 3% 7%;
         position: absolute;
         top: 10%;
     }
-
     #fontbig {
         font-size: 92%;
     }
-
     .fontsmall {
         font-size: 61%;
         line-height: 1.3;
     }
-
     #bannerimage {
         height: 100%;
         width: 84%;
     }
-
     .bannerimagecontainer {
         left: 56px;
         top: 0px;
         position: relative;
         display: inline;
     }
-
     #borderbox {
         display: none;
     }
-
     #boxwitharrow {
         display: none;
     }
-
     #boxwitharrow fa-solid {
         font-size: 86%;
     }
 }
-
 @media(max-width: 1000px) {
     .bannerimagecontainer {
         left: 0px
@@ -202,7 +166,6 @@ nav a {
     align-items: center;
     padding: 11% 7% 8% 0%;
 }
-
 
 #hrline {
     height: 3.5px;
@@ -343,6 +306,16 @@ nav a {
     padding-right: 10%;
 }
 
+@media(max-width:1000px) {
+    .weprovide1 {
+        padding: 92px 22px;
+    }
+
+    #weprovtext {
+        padding-left: 4%;
+    }
+}
+
 @media(max-width:700px) {
     .weprovide1 {
         display: flex;
@@ -370,16 +343,6 @@ nav a {
 
     .digit {
         font-size: 28px;
-    }
-}
-
-@media(max-width:1000px) {
-    .weprovide1 {
-        padding: 92px 22px;
-    }
-
-    #weprovtext {
-        padding-left: 4%;
     }
 }
 
@@ -483,17 +446,7 @@ nav a {
     font-weight: 400;
 }
 
-@media(max-width:700px) {
-    .weprovide2 {
-        padding: 22px;
-        display: flex;
-        flex-direction: column;
-    }
 
-    .bulletsubtext {
-        font-size: 85%;
-    }
-}
 
 @media(max-width:1000px) {
     .weprovide2 {
@@ -501,6 +454,18 @@ nav a {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .bulletsubtext {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:700px) {
+    .weprovide2 {
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
     }
 
     .bulletsubtext {
