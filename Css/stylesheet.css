@@ -40,6 +40,7 @@ nav a {
     color: black;
     padding-left: 64%;
 }
+
 @media(max-width: 700px) {
     .luxteriortitle {
         color: black;
@@ -48,15 +49,30 @@ nav a {
     }
     .navigationbardiv {
         padding-left: 0%;
+        justify-content: center;
+        justify-items: center;
     }
     nav li {
         display: block;
+        justify-content: center;
+        text-align: center;
     }
     header {
-        padding: 0% 5%;
+        padding: 0% 4%;
     }
     .headersection{
         flex: 1;
+    }
+    .navigationicons {
+        padding: 22px 0px 0px 0px;
+        float: right;
+    }
+    .navigationicons a {
+        padding-left: 30%;
+    }
+    nav a {
+        padding: 3px 15px 15px 15px;
+
     }
 }
 
@@ -106,6 +122,25 @@ nav a {
     right: 85px;
     color: white;
 }
+
+@media(max-width: 1000px) {
+    .bannerimagecontainer {
+        left: 0px
+    }
+
+    #bannerimage {
+        width: 100%;
+    }
+
+    #borderbox {
+        display: none;
+    }
+
+    #boxwitharrow {
+        display: none;
+    }
+}
+
 @media(max-width: 700px) {
     #banner {
         position: relative;
@@ -125,10 +160,10 @@ nav a {
     }
     #bannerimage {
         height: 100%;
-        width: 84%;
+        width: 100%;
     }
     .bannerimagecontainer {
-        left: 56px;
+        /* left: 56px; */
         top: 0px;
         position: relative;
         display: inline;
@@ -141,23 +176,6 @@ nav a {
     }
     #boxwitharrow fa-solid {
         font-size: 86%;
-    }
-}
-@media(max-width: 1000px) {
-    .bannerimagecontainer {
-        left: 0px
-    }
-
-    #bannerimage {
-        width: 100%;
-    }
-
-    #borderbox {
-        display: none;
-    }
-
-    #boxwitharrow {
-        display: none;
     }
 }
 
@@ -334,7 +352,7 @@ nav a {
 
     #weprovide1image {
         height: auto;
-        width: 70%;
+        width: 100%;
     }
 
     .weprovsub {
@@ -446,8 +464,6 @@ nav a {
     font-weight: 400;
 }
 
-
-
 @media(max-width:1000px) {
     .weprovide2 {
         padding: 20px 22px;
@@ -473,6 +489,19 @@ nav a {
     }
 }
 
+@media(max-width:500px) {
+.bulletcontent1{
+    padding-top: 21px;
+}
+}
+
+@media(max-width:451px) {
+    .bulletcontent2{
+    padding-top: 28px;
+    }
+}
+
+
 .part2 {
     margin-right: 0;
 }
@@ -489,7 +518,7 @@ nav a {
 
     #weprovide2image {
         height: auto;
-        width: 70%;
+        width: 100%;
     }
 }
 
