@@ -5,32 +5,37 @@ body {
 .container {
     max-width: 1350px;
     margin: 0px auto;
+    background-color: bisque;
 }
 
 header {
-    padding: 13px 13px 50px 0px;
+    padding: 25px 0px;
     display: flex;
+    align-items: center;
 }
 
 .luxteriortitle {
     color: black;
-    padding: 15px 15px 15px 0px;
     font-size: 22px;
+    flex-grow: 1;
+    font-weight: 500;
+    text-align: center;
 }
 
 nav li {
     display: inline;
+    padding: 0% 3%;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    padding: 3px 15px 15px 15px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .navigationbardiv {
-    padding-left: 25%
+    flex-grow: 1.5;
+    text-align: center;
 }
 
 #headerfont {
@@ -38,22 +43,20 @@ nav a {
 }
 
 .navigationicons {
-    margin-left: auto;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 22px 54px 0px 0px;
-    display: flex;
+    flex-grow: 1;
+    text-align: right;
 }
 
 .navigationicons a {
     color: black;
-    padding-left: 64%;
+}
+ul{
+    padding-inline-start: 0px;
 }
 
 @media(max-width: 1500px) {
     .navigationbardiv {
         padding-left: 0%;
-        margin: auto;
     }
 }
 
@@ -68,12 +71,6 @@ nav a {
         padding-left: 0%;
     }
 
-    /* nav li {
-        display: block;
-        justify-content: center;
-        text-align: center;
-    } */
-
     header {
         padding: 0% 4%;
     }
@@ -83,27 +80,14 @@ nav a {
     }
 
     .navigationicons {
-        padding: 22px 0px 0px 0px;
         float: right;
     }
-
-    .navigationicons a {
-        padding-left: 30%;
-    }
-
-    nav a {
-        padding: 3px 15px 15px 15px;
-
-    }
-}
-
-#banner {
-    position: relative;
 }
 
 .textbox {
     background-color: #5a6e79;
-    padding: 3% 7.5% 3% 5.5%;
+    padding: 3% 7.5% 3% 6.5%;
+    margin: 1% 0% 0% -6.5%;
     color: white;
     position: absolute;
     top: 16%;
@@ -121,25 +105,33 @@ nav a {
     padding: 40px;
     position: absolute;
     top: 88%;
-    left: 327px;
+    left: 16%;
 }
+
+.banner {
+    position: relative;
+    right: -21%;
+    margin-left: auto;
+    right: 0;
+}
+
+.bannerimagecontainer{
+    position: relative;
+    left: 18%;
+    width: 80%;
+} 
 
 #bannerimage {
     height: 576px;
-    width: 1068px;
-}
-
-.bannerimagecontainer {
-    position: relative;
-    left: 350px;
+    width: 100%;
 }
 
 #boxwitharrow {
     background-color: #5a6e79;
     padding: 36px 52px;
     position: absolute;
-    top: 500px;
-    right: 85px;
+    top: 503px;
+    right: 0%;
     color: white;
 }
 
@@ -162,7 +154,7 @@ nav a {
 }
 
 @media(max-width: 700px) {
-    #banner {
+    .banner {
         position: relative;
         display: flex;
     }
@@ -188,7 +180,6 @@ nav a {
     }
 
     .bannerimagecontainer {
-        /* left: 56px; */
         top: 0px;
         position: relative;
         display: inline;
@@ -255,19 +246,19 @@ nav a {
 
 .box {
     display: flex;
+    flex: 1;
+}
+
+.boxleft{
+    justify-content: left;
+}
+
+.boxcenter{
     justify-content: center;
 }
 
-.boxleft {
-    margin-right: auto;
-}
-
-.boxcenter {
-    padding-right: 20%;
-}
-
-.boxright {
-    margin-left: auto;
+.boxright{
+    justify-content: right;
 }
 
 .text {
@@ -277,6 +268,10 @@ nav a {
 .heading {
     font-weight: bold;
     font-size: 174%;
+}
+
+.gridsmallfont{
+    font-size: 127%;
 }
 
 @media(max-width:700px) {
@@ -311,11 +306,12 @@ nav a {
 
 .weprovide1 {
     display: flex;
-    padding: 8% 0% 5% 0%;
+    padding: 8% 0% 6% 0%;
 }
 
 #weprovide1image {
-    width: 45%;
+    height: 600px;
+    width: 40%;
 }
 
 #weprovtext {
@@ -330,7 +326,7 @@ nav a {
 
 .weprovsub {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 125%;
     color: #5a6e79;
     font-family: 'Poppins', sans-serif;
 }
@@ -338,7 +334,7 @@ nav a {
 .weprovnum {
     color: #5a6e79;
     display: flex;
-    padding-top: 4%;
+    /* padding-top: 4%; */
 }
 
 .digit {
@@ -408,7 +404,7 @@ nav a {
 #arrowimage {
     width: 38px;
     position: absolute;
-    left: 18.5%;
+    left: 14.5%;
 }
 
 @media(max-width:700px) {
@@ -561,7 +557,7 @@ nav a {
 
 #weprovide2image {
     height: 642px;
-    padding-top: 50px;
+    padding-top: 32px;
 }
 
 @media(max-width:700px) {
@@ -583,7 +579,7 @@ nav a {
 
 .whatour {
     display: flex;
-    padding: 9% 0% 1% 0%;
+    padding: 8% 0% 1% 0%;
     align-items: center;
 }
 
