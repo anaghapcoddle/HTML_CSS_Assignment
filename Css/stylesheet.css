@@ -5,7 +5,7 @@ body {
 .container {
     max-width: 1350px;
     margin: 0px auto;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 header {
@@ -969,14 +969,15 @@ svg {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 80%;
+    flex-grow: 1;
     flex: 1;
 }
 
-.firstblock{
-flex: 3;
+.firstblock {
+    flex: 3;
 }
 
-.lastblock{
+.lastblock {
     flex: 2;
 }
 
@@ -985,18 +986,6 @@ flex: 3;
     line-height: 80px;
 }
 
-@media (min-width:700px) and (max-width:991px) {
-    .footerblock {
-        padding: 24px 18px 0px 18px;
-        flex: 1;
-    }
-}
-
-@media(max-width:1025px) {
-    .footerblock i {
-        font-size: 21px;
-    }
-}
 
 @media(max-width:1025px) {
     .footerblock i {
@@ -1008,9 +997,17 @@ flex: 3;
     .footerlinks {
         padding-top: 50px;
     }
+}
 
+@media (min-width:700px) and (max-width:991px) {
+    .footerlinks {
+        flex-wrap: wrap;
+    }
     .footerblock {
-        padding: 24px 15px 0px 15px;
+        flex-basis: auto;
+        width: 25%;
+        padding: 24px 18px 24px 18px;
+        text-align: center;
     }
 }
 
