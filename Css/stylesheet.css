@@ -5,6 +5,7 @@ body {
 .container {
     max-width: 1350px;
     margin: 0px auto;
+    background-color: bisque;
 }
 
 header {
@@ -347,14 +348,11 @@ svg {
         flex-direction: column;
     }
 
-    .bi-award{
-        height: 55px;
-        width: 55px;
-    }
-
     .box {
         padding: 5%;
+        justify-content: left;
     }
+
 
     .heading {
         font-size: 106%;
@@ -567,9 +565,11 @@ svg {
     .weprovide2 {
         padding: 0% 1% 0% 2%;
     }
+
     .bulletsubtext br {
         display: none;
     }
+
     .bulletcontent3 {
         padding: 4% 0% 0% 0%;
     }
@@ -598,11 +598,11 @@ svg {
     }
 
     .bulletcontent2 {
-        padding-top: 64px;
+        padding-top: 85px;
     }
 
     .bulletcontent3 {
-        padding-top: 64px;
+        padding-top: 85px;
     }
 }
 
@@ -810,6 +810,11 @@ svg {
     .quotecontainer {
         padding: 70px 21px;
     }
+
+    .quotebox {
+        padding: 5% 6%;
+    }
+
 }
 
 @media(max-width:700px) {
@@ -899,7 +904,7 @@ svg {
     .textfieldcontainer {
         width: 90%;
         box-shadow: 0px 0px 7px #d2d1d1;
-        bottom: 98%;
+        bottom: 95%;
     }
 }
 
@@ -933,12 +938,10 @@ svg {
     justify-content: center;
 }
 
-.footerfont {
+.luxhead {
+    font-weight: bold;
+    font-size: 22px;
     color: white;
-    padding: 24px 54px 0px 55px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-    font-size: 80%;
 }
 
 .luxtext {
@@ -946,25 +949,57 @@ svg {
     color: #bbbbbb;
 }
 
-.luxhead {
-    font-weight: bold;
-    font-size: 22px;
-}
-
 .footer a {
     text-decoration: none;
     color: #bbbbbb;
     font-size: 14px;
+    display: block;
+    line-height: 40px;
 }
 
 .footerlinks {
     display: flex;
     flex-direction: row;
     padding: 8% 0%;
+    flex-wrap: wrap;
+}
+
+.footerblock {
+    padding: 24px 18px 0px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 80%;
+    flex: 1;
+}
+
+.firstblock{
+flex: 3;
+}
+
+.lastblock{
+    flex: 2;
+}
+
+.footericons {
+    color: #ffffff;
+    line-height: 80px;
+}
+
+@media (min-width:700px) and (max-width:991px) {
+    .footerblock {
+        padding: 24px 18px 0px 18px;
+        flex: 1;
+    }
 }
 
 @media(max-width:1025px) {
-    .footerfont i {
+    .footerblock i {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:1025px) {
+    .footerblock i {
         font-size: 21px;
     }
 }
@@ -974,19 +1009,17 @@ svg {
         padding-top: 50px;
     }
 
-    .footerfont {
-        color: white;
+    .footerblock {
         padding: 24px 15px 0px 15px;
     }
 }
 
 @media(max-width:700px) {
-    .footerfont {
+    .footerblock {
         padding: 24px 0px 0px 18px;
     }
 
     .footerlinks {
-        display: flex;
         flex-direction: column;
         padding-top: 33px;
     }
