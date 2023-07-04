@@ -5,7 +5,6 @@ body {
 .container {
     max-width: 1350px;
     margin: 0px auto;
-    /* background-color: bisque; */
 }
 
 .header-container {
@@ -48,6 +47,16 @@ nav a {
 
 .iconspace {
     width: 11%;
+}
+
+@media (min-width:768px) and (max-width:1025px) {
+    header {
+        padding: 0% 2%;
+    }
+    .navigationbardiv {
+        flex: 4;
+        text-align: center;
+    }
 }
 
 @media(max-width: 700px) {
@@ -98,8 +107,6 @@ nav a {
     .iconspace {
         width: 22%;
     }
-
-
 }
 
 .banner-container {
@@ -476,11 +483,11 @@ svg {
 
     #weprovtext {
         margin-left: 0;
-        padding: 10px 0px;
+        padding: 0px 0px;
     }
 
     .weprovhead {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     #weprovide1image {
@@ -499,7 +506,11 @@ svg {
 
 @media(max-width:426px) {
     .weprovide1-container {
-        padding: 2px 22px 0px 22px;
+        padding: 9px 22px 0px 22px;
+    }
+    .numbers{
+        padding-top: 0%;
+            padding-right: 6%;
     }
 }
 
@@ -617,8 +628,21 @@ svg {
         display: none;
     }
 
+    .bulletcontent2 {
+        padding: 6% 0% 0% 0%;
+    }
+
     .bulletcontent3 {
-        padding: 4% 0% 0% 0%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .part1{
+        flex: 1;
+    }
+
+    .part2{
+        flex: 1;
+        padding-left: 10%;
     }
 }
 
@@ -636,20 +660,6 @@ svg {
     #weprovide2image {
         height: 642px;
         padding-top: 64px;
-    }
-}
-
-@media(max-width:769px) {
-    .bulletcontent1 {
-        padding-top: 19px;
-    }
-
-    .bulletcontent2 {
-        padding-top: 85px;
-    }
-
-    .bulletcontent3 {
-        padding-top: 85px;
     }
 }
 
@@ -674,18 +684,6 @@ svg {
 
     .bulletsubtext br {
         display: none;
-    }
-}
-
-@media(max-width:500px) {
-    .bulletcontent1 {
-        padding-top: 21px;
-    }
-}
-
-@media(max-width:451px) {
-    .bulletcontent3 {
-        padding-top: 12px;
     }
 }
 
@@ -722,16 +720,25 @@ svg {
 }
 
 .part2 {
-    /* display: flex;
-    margin-right: 0; */
     margin-left: auto;
-    /* position: relative; */
 }
 
 #weprovide2image {
     height: 642px;
     width: 550px;
     padding-top: 33px;
+}
+
+@media(max-width:1025px) {
+    #weprovide2image {
+        width: 493px;
+    }
+}
+
+@media(max-width:1000px) {
+    .part2 {
+        margin-right: auto;
+    }
 }
 
 @media(max-width:700px) {
@@ -742,12 +749,6 @@ svg {
     #weprovide2image {
         height: auto;
         width: 100%;
-    }
-}
-
-@media(max-width:1000px) {
-    .part2 {
-        margin-right: auto;
     }
 }
 
@@ -953,9 +954,9 @@ svg {
 
 @media(max-width:1000px) {
     .textfieldcontainer {
-        width: 90%;
+        width: 50%;
         box-shadow: 0px 0px 7px #d2d1d1;
-        bottom: 95%;
+        bottom: 96%;
     }
 }
 
@@ -978,6 +979,15 @@ svg {
         top: 10px;
         font-size: 80%;
         padding: 1px 14px;
+    }
+}
+
+@media(max-width:426px) {
+    .textfieldcontainer {
+        width: 81%;
+    } 
+    #subscribebutton {
+        padding: 1px 7px;
     }
 }
 
