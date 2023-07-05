@@ -53,6 +53,7 @@ nav a {
     header {
         padding: 0% 2%;
     }
+
     .navigationbardiv {
         flex: 4;
         text-align: center;
@@ -105,7 +106,7 @@ nav a {
     }
 
     .iconspace {
-        width: 22%;
+        width: 26%;
     }
 }
 
@@ -241,6 +242,11 @@ nav a {
     }
 }
 
+@media(max-width: 700px) {
+    .textbox {
+        top: 8%;
+    }
+}
 .benefits-container {
     display: flex;
     align-items: center;
@@ -405,10 +411,12 @@ svg {
         height: 30px;
         width: 30px;
     }
+
     .box {
         padding: 2% 4%;
     }
-    .grid-container br{
+
+    .grid-container br {
         display: none;
     }
 }
@@ -480,7 +488,7 @@ svg {
     .weprovide1-container {
         display: flex;
         flex-direction: column;
-        padding: 22px 22px 0px 22px;
+        padding: 22px 22px 5px 22px;
     }
 
     #weprovtext {
@@ -508,12 +516,9 @@ svg {
 }
 
 @media(max-width:426px) {
-    .weprovide1-container {
-        padding: 9px 22px 0px 22px;
-    }
-    .numbers{
+    .numbers {
         padding-top: 0%;
-            padding-right: 6%;
+        padding-right: 6%;
     }
 }
 
@@ -545,7 +550,7 @@ svg {
 @media(max-width:1000px) {
     #arrowimage {
         position: relative;
-        left: -1.5%;
+        left: -3.5%;
     }
 }
 
@@ -645,11 +650,11 @@ svg {
         padding: 5% 0% 0% 0%;
     }
 
-    .part1{
+    .part1 {
         flex: 1;
     }
 
-    .part2{
+    .part2 {
         flex: 1;
         padding-left: 10%;
     }
@@ -666,9 +671,12 @@ svg {
         font-size: 85%;
     }
 
-    #weprovide2image {
-        height: 642px;
-        padding-top: 64px;
+    .bulletcontent2 {
+        padding-top: 83.5px;
+    }
+
+    .bulletcontent3 {
+        padding-top: 86px;
     }
 }
 
@@ -689,23 +697,23 @@ svg {
         justify-content: normal;
         height: auto;
     }
-    
+
     .circle {
         width: 40px;
         height: 40px;
         font-size: 17px;
     }
 
-    .line{
+    .line {
         margin: 22% 0%;
         width: 1.6px;
     }
 
-    .line1{
+    .line1 {
         height: 36px;
     }
 
-    .line2{
+    .line2 {
         height: 41px;
     }
 
@@ -714,11 +722,11 @@ svg {
     }
 
     .bulletsubtext {
-    font-size: 63.5%; 
+        font-size: 63.5%;
     }
 
-    .bullet{
-        padding-top: 4%;
+    .bullet {
+        padding-top: 3%;
     }
 }
 
@@ -726,9 +734,11 @@ svg {
     .bulletcontent1 {
         padding-top: 9px;
     }
+
     .bulletcontent2 {
         padding-top: 31px;
     }
+
     .bulletcontent3 {
         padding-top: 35px;
     }
@@ -738,9 +748,11 @@ svg {
     .bulletcontent1 {
         padding-top: 9px;
     }
+
     .bulletcontent2 {
         padding-top: 16px;
     }
+
     .bulletcontent3 {
         padding-top: 21px;
     }
@@ -766,6 +778,11 @@ svg {
     .part2 {
         margin-right: auto;
     }
+
+    #weprovide2image {
+        height: 642px;
+        padding-top: 64px;
+    }
 }
 
 @media(max-width:700px) {
@@ -777,7 +794,9 @@ svg {
     #weprovide2image {
         height: auto;
         width: 100%;
+        padding-top: 10px;
     }
+
 }
 
 .weour-container {
@@ -804,16 +823,9 @@ svg {
 
 @media(max-width:700px) {
     .weour-container {
-        padding: 2% 4% 6% 4%;
+        padding: 2% 4% 2% 4%;
     }
 
-    .quoteheading br {
-        display: none;
-    }
-
-    .quotetext br {
-        display: none;
-    }
 }
 
 .iconclr1 {
@@ -822,6 +834,12 @@ svg {
 
 .iconclr2 {
     color: #878c8f;
+}
+
+@media(max-width:700px) {
+    .weouricon {
+        font-size: 55%;
+    }
 }
 
 .quote-container {
@@ -855,6 +873,7 @@ svg {
     font-family: 'Poppins', sans-serif;
     font-size: small;
     margin: 0;
+    padding: 6% 0%;
 }
 
 .image-container {
@@ -873,6 +892,7 @@ svg {
 
 .person {
     display: flex;
+    align-items: center;
 }
 
 .name-container {
@@ -880,12 +900,16 @@ svg {
     padding-top: 9px;
 }
 
+.name-container p {
+    margin: 0;
+}
+
 .personname {
-    font-size: 119%;
+    font-size: 113%;
 }
 
 .personjob {
-    font-size: 85%;
+    font-size: 78%;
 }
 
 @media(max-width:1025px) {
@@ -909,6 +933,47 @@ svg {
     .space {
         height: 10px;
     }
+
+    .quotebox i {
+        font-size: xx-large;
+    }
+
+    .quotetext br {
+        display: none;
+    }
+
+    .quoteheading {
+        font-size: large;
+    }
+
+    .quotebox {
+        padding: 2% 3%;
+    }
+
+    .quotetext {
+        font-size: x-small;
+    }
+
+    .image-container {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .name-container {
+        padding-left: 10px;
+        padding-top: 0px;
+    }
+
+    .personname {
+        font-size: 75%;
+    }
+
+    .personjob {
+        font-size: 56%;
+    }
 }
 
 .subscribe-container {
@@ -919,7 +984,7 @@ svg {
 
 @media(max-width:700px) {
     .subscribe-container {
-        padding: 8% 0% 5% 0%;
+        padding: 0% 0% 3% 0%;
     }
 }
 
@@ -981,9 +1046,7 @@ svg {
         font-size: 87%;
         padding: 1px 17px
     }
-}
 
-@media(max-width:1000px) {
     .textfieldcontainer {
         width: 50%;
         box-shadow: 0px 0px 7px #d2d1d1;
@@ -999,16 +1062,16 @@ svg {
     }
 
     .textfieldclass {
-        height: 40px;
-        width: 67%;
-        left: 5%;
-        top: 5%;
+        height: 25px;
+        width: 59%;
+        left: 4%;
+        top: 9%;
     }
 
     #subscribebutton {
         right: 9px;
-        top: 10px;
-        font-size: 80%;
+        top: 5.5px;
+        font-size: 68%;
         padding: 1px 14px;
     }
 }
@@ -1016,9 +1079,10 @@ svg {
 @media(max-width:426px) {
     .textfieldcontainer {
         width: 81%;
-    } 
+    }
+
     #subscribebutton {
-        padding: 1px 7px;
+        padding: 0px 7px;
     }
 }
 
@@ -1062,7 +1126,6 @@ footer a {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 80%;
-    flex-grow: 1;
     flex: 1;
 }
 
@@ -1075,7 +1138,7 @@ footer a {
 }
 
 .footericoncontainer {
-    padding-top: 28px;
+    padding-top: 6px;
 }
 
 .footericoncontainer a {
@@ -1116,16 +1179,38 @@ footer a {
 
 @media(max-width:700px) {
     .footerblock {
-        padding: 24px 0px 0px 18px;
+        padding: 0px 0px 0px 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footerlinks {
         flex-direction: column;
-        padding-top: 33px;
+        padding: 8% 0% 0% 0%;
+    }
+
+    .luxhead {
+        font-weight: 500;
+        font-size: 19px;
     }
 
     .luxtext {
-        padding-top: 13px;
-        padding-bottom: 13px;
+        padding-top: 3px;
+        padding-bottom: 9px;
+        font-size: smaller;
+    }
+
+    footer a {
+        line-height: 20px;
+        font-size: small;
+    }
+
+    .footericoncontainer {
+        padding-top: 17px;
+    }
+
+    .footericons {
+        line-height: 21px;
     }
 }
