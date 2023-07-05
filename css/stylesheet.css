@@ -291,7 +291,7 @@ nav a {
 
 @media(max-width: 426px) {
     .benefits-container {
-        padding: 4% 0% 4% 7%;
+        padding: 0% 0% 0% 7%;
     }
 
     #hrline {
@@ -331,10 +331,12 @@ nav a {
 .heading {
     font-weight: bold;
     font-size: 200%;
+    margin: 0;
 }
 
 .gridsmallfont {
     font-size: 150%;
+    margin: 0;
 }
 
 svg {
@@ -483,11 +485,12 @@ svg {
 
     #weprovtext {
         margin-left: 0;
-        padding: 0px 0px;
+        padding: 9px 0px;
     }
 
     .weprovhead {
         font-size: 18px;
+        margin: 0;
     }
 
     #weprovide1image {
@@ -514,14 +517,14 @@ svg {
     }
 }
 
-#button1 {
+#learnbutton {
     background-color: white;
     color: #5a6e79;
     border: 2px solid #5a6e79;
     padding: 11px 20px;
 }
 
-#b1 {
+#learnbuttoncontainer {
     padding-top: 7%;
     display: flex;
     align-items: center;
@@ -547,15 +550,22 @@ svg {
 }
 
 @media(max-width:700px) {
-    #button1 {
+
+    #learnbuttoncontainer {
+        padding-top: 3%;
+        display: flex;
+        align-items: center;
+    }
+
+    #learnbutton {
         border: 1px solid #5a6e79;
-        padding: 6px 12px;
+        padding: 4px 9px;
+        font-size: 64%;
     }
 
     #arrowimage {
         width: 24px;
-        position: relative;
-        left: -3.5%;
+        left: -2.5%;
     }
 }
 
@@ -567,9 +577,7 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
-    height: 370px;
     height: 412px;
 }
 
@@ -592,7 +600,7 @@ svg {
     background-color: gray;
 }
 
-#bullet {
+.bullet {
     display: flex;
 }
 
@@ -617,6 +625,7 @@ svg {
     color: #5a6e79;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 
 @media(max-width:1025px) {
@@ -663,60 +672,78 @@ svg {
     }
 }
 
-@media(max-width:700px) {
-    .weprovide2-container {
-        padding: 0px 22px 22px 22px;
-        display: flex;
-        flex-direction: column;
+@media(max-width:446px) {
+    .bulletcontent1 {
+        padding-top: 9px;
+    }
+
+    .bulletcontent2 {
+        padding-top: 30.5px;
+    }
+
+    .bulletcontent3 {
+        padding-top: 36px;
+    }
+
+    .circle-container {
+        justify-content: normal;
+        height: auto;
+    }
+    
+    .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .line{
+        margin: 22% 0%;
+        width: 1.6px;
+    }
+
+    .line1{
+        height: 36px;
+    }
+
+    .line2{
+        height: 41px;
+    }
+
+    .bullettext br {
+        display: none;
     }
 
     .bulletsubtext {
-        font-size: 85%;
+    font-size: 63.5%; 
     }
 
-    .bulletcontent2 {
-        padding-top: 80px;
-    }
-
-    .bulletcontent3 {
-        padding-top: 63px;
-    }
-
-    .bulletsubtext br {
-        display: none;
-    }
-}
-
-@media(max-width:446px) {
-    .bulletcontent2 {
-        padding-top: 55px;
-    }
-
-    .bulletcontent3 {
-        padding-top: 49px;
+    .bullet{
+        padding-top: 4%;
     }
 }
 
 @media(max-width:376px) {
+    .bulletcontent1 {
+        padding-top: 9px;
+    }
+    .bulletcontent2 {
+        padding-top: 31px;
+    }
     .bulletcontent3 {
-        padding-top: 28px;
+        padding-top: 35px;
     }
 }
 
 @media(max-width:321px) {
-    .bulletcontent2 {
-        padding-top: 33px;
-    }
-
-    .bulletcontent3 {
+    .bulletcontent1 {
         padding-top: 9px;
     }
-}
-
-.line2 {
-    width: 2px;
-    height: 85px;
-    background-color: gray;
+    .bulletcontent2 {
+        padding-top: 16px;
+    }
+    .bulletcontent3 {
+        padding-top: 21px;
+    }
 }
 
 .part2 {
@@ -744,6 +771,7 @@ svg {
 @media(max-width:700px) {
     .part2 {
         margin-left: 0;
+        padding-left: 0%;
     }
 
     #weprovide2image {
@@ -754,7 +782,7 @@ svg {
 
 .weour-container {
     display: flex;
-    padding: 8% 0% 1% 0%;
+    padding: 4% 0% 1% 0%;
     align-items: center;
 }
 
@@ -820,11 +848,13 @@ svg {
     font-weight: 500;
     font-size: x-large;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .quotetext {
     font-family: 'Poppins', sans-serif;
     font-size: small;
+    margin: 0;
 }
 
 .image-container {
@@ -850,8 +880,8 @@ svg {
     padding-top: 9px;
 }
 
-#personname {
-    font-size: 115%;
+.personname {
+    font-size: 119%;
 }
 
 .personjob {
@@ -899,6 +929,7 @@ svg {
     font-size: 85%;
     font-weight: 500;
     padding-top: 2%;
+    margin: 0;
 }
 
 @media(max-width:700px) {
@@ -1003,6 +1034,7 @@ footer {
     font-weight: bold;
     font-size: 22px;
     color: white;
+    margin: 0;
 }
 
 .luxtext {
@@ -1043,7 +1075,7 @@ footer a {
 }
 
 .footericoncontainer {
-    padding-top: 4px;
+    padding-top: 28px;
 }
 
 .footericoncontainer a {
