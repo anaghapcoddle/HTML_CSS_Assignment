@@ -267,21 +267,23 @@ nav a {
 }
 
 @media(max-width: 1025px) {
-    #benefits {
+    .benefits-container {
         padding: 11% 7% 10% 2%;
     }
 }
 
 @media(max-width: 1000px) {
-    #benefits {
-        padding: 10% 0% 8% 2%;
+    .benefits-container {
+        padding: 5% 0% 5% 0%;
+    }
+    #benefitstext {
+        font-size: 182%;
     }
 }
 
 @media(max-width: 700px) {
-
-    #benefits {
-        padding: 17% 0% 8% 8%;
+    .benefits-container {
+        padding: 2% 0% 1% 8%;
     }
 
     #hrline {
@@ -427,13 +429,16 @@ svg {
 }
 
 #weprovide1image {
-    height: 600px;
+    height: auto;
     width: 40%;
 }
 
 #weprovtext {
     margin-left: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
 }
 
 .weprovhead {
@@ -475,12 +480,32 @@ svg {
 }
 
 @media(max-width:1000px) {
+    #weprovide1image {
+        height: auto;
+        width: 40%;
+    }
     .weprovide1-container {
-        padding: 92px 22px 49px 22px;
+        padding: 68px 22px 49px 22px;
+    }
+
+    .weprovhead {
+        font-size: 33px;
+    }
+
+    .weprovsub {
+        font-size: 90%;
+    }
+
+    .weprovsub br{
+        display: none;
     }
 
     #weprovtext {
         padding-left: 4%;
+    }
+
+    .digit {
+        font-size: 44px;
     }
 }
 
@@ -522,17 +547,17 @@ svg {
     }
 }
 
+#learnbuttoncontainer {
+    padding-top: 7%;
+    display: flex;
+    align-items: center;
+}
+
 #learnbutton {
     background-color: white;
     color: #5a6e79;
     border: 2px solid #5a6e79;
     padding: 11px 20px;
-}
-
-#learnbuttoncontainer {
-    padding-top: 7%;
-    display: flex;
-    align-items: center;
 }
 
 #arrowimage {
@@ -569,8 +594,16 @@ svg {
     }
 
     #arrowimage {
-        width: 24px;
-        left: -2.5%;
+        width: 20px;
+        left: -1.5%;
+    }
+}
+
+@media(max-width:376px) {
+
+    #arrowimage {
+        width: 18px;
+        left: -2%;
     }
 }
 
