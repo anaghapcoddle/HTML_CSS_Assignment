@@ -38,6 +38,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: end;
+    padding-right: 2%;
 }
 
 .navigationicons a {
@@ -127,12 +128,12 @@ nav a {
     padding: 40px;
     position: absolute;
     top: 89%;
-    left: 17.5%;
+    left: 15.5%;
 }
 
 .bannerimagecontainer {
     position: relative;
-    left: 20%;
+    right: -18%;
     width: 80%;
 }
 
@@ -146,7 +147,7 @@ nav a {
     padding: 36px 52px;
     position: absolute;
     top: 503px;
-    right: -1%;
+    right: 1%;
     color: white;
 }
 
@@ -252,7 +253,7 @@ nav a {
 .benefits-container {
     display: flex;
     align-items: center;
-    padding: 7% 0% 7% 0%;
+    padding: 7% 0% 5% 0%;
 }
 
 .horizontal-line {
@@ -350,7 +351,7 @@ nav a {
     font-size: 150%;
     margin: 0;
     padding-top: 8%;
-    width: 71%;
+    width: 90%;
 }
 
 svg {
@@ -410,6 +411,11 @@ svg {
     .gridsmallfont {
         font-size: 80%;
         padding-top: 3%;
+    }
+
+    svg {
+        height: 30px;
+        width: 30px;
     }
 }
 
