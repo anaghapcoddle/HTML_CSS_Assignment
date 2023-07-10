@@ -9,7 +9,7 @@ body {
 
 .header-container {
     display: flex;
-    padding: 20px 0 45px 0;
+    padding: 20px 0px 45px 0px;
 }
 
 .headerpart {
@@ -336,18 +336,6 @@ nav a {
     flex: 1;
 }
 
-.boxleft {
-    justify-content: left;
-}
-
-.boxcenter {
-    justify-content: center;
-}
-
-.boxright {
-    justify-content: right;
-}
-
 .text {
     padding-left: 18px;
 }
@@ -391,10 +379,6 @@ svg {
         flex: 1;
         justify-content: center;
         padding: 0px 10px;
-    }
-
-    .boxcenter {
-        padding-right: 0%;
     }
 
     .best-quality-heading-font {
@@ -572,7 +556,7 @@ svg {
 
     .weprovsub {
         font-size: 7px;
-        width: 67%;
+        width: 92%;
     }
 
     .digit {
@@ -644,7 +628,6 @@ svg {
 }
 
 @media(max-width:376px) {
-
     #arrowimage {
         width: 18px;
         left: -2%;
