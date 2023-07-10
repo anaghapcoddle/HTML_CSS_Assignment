@@ -5,7 +5,6 @@ body {
 .container {
     max-width: 1350px;
     margin: 0px auto;
-    /* background-color: rgb(223, 209, 190); */
 }
 
 .header-container {
@@ -50,28 +49,7 @@ nav a {
     width: 11%;
 }
 
-@media (min-width:768px) and (max-width:1025px) {
-    header {
-        padding: 0% 2%;
-    }
-
-    .navigationbardiv {
-        flex: 4;
-        text-align: center;
-    }
-}
-
-@media(max-width: 700px) {
-    header {
-        padding: 0% 4%;
-    }
-
-    .navigationicons a {
-        font-size: 11px;
-    }
-}
-
-@media(max-width: 426px) {
+@media(max-width: 1195px) {
     header {
         padding: 0% 1%;
     }
@@ -100,6 +78,10 @@ nav a {
 
     .navigationicons {
         flex: 0.5;
+    }
+
+    .navigationicons a {
+        font-size: 11px;
     }
 
     ul {
@@ -173,16 +155,19 @@ nav a {
         padding: 0% 4.5% 3% 107%;
         width: 32%;
     }
+
     .bannerimagecontainer {
         left: 18%;
     }
+
     #borderbox {
         left: 15.5%;
     }
+
     #boxwitharrow {
         top: 497px;
         right: 1%;
-}
+    }
 }
 
 @media(max-width: 1000px) {
@@ -284,10 +269,17 @@ nav a {
     width: 29%;
 }
 
+@media(min-width: 1500px) {
+    .benefits-container {
+        padding: 3% 0%;
+    }
+}
+
 @media(max-width: 1025px) {
     .benefits-container {
         padding: 11% 7% 5% 2%;
     }
+
     #benefitstext {
         width: 37%;
     }
@@ -331,10 +323,7 @@ nav a {
 
     #benefitstext {
         font-size: 17px;
-    }
-
-    #benefitstext {
-        width: 58%;
+        width: 55%;
     }
 }
 
@@ -501,20 +490,29 @@ svg {
     padding-right: 10%;
 }
 
+@media(min-width:1025px) {
+    .weprovide1-container {
+    padding: 4% 0% ;}
+}
+
 @media(max-width:1025px) {
     .weprovide1-container {
         padding: 10% 1% 6% 2%;
     }
+
     #weprovide1image {
         width: 47%;
     }
+
     .weprovide1-heading {
         width: 70%;
         margin: 0;
     }
+
     #weprovtext {
         margin-left: 3%;
     }
+
     .weprovnum {
         padding-top: 0%;
         grid-template-columns: 30% 30% 30%;
@@ -574,14 +572,11 @@ svg {
 
     .weprovsub {
         font-size: 7px;
+        width: 67%;
     }
 
     .digit {
         font-size: 28px;
-    }
-
-    .weprovnum {
-        padding-top: 0%;
     }
 }
 
@@ -589,6 +584,10 @@ svg {
     .numbers {
         padding-top: 0%;
         padding-right: 6%;
+    }
+
+    .weprovnum {
+        grid-template-columns: 20% 20% 20%;
     }
 }
 
@@ -705,7 +704,7 @@ svg {
         padding: 0% 1% 0% 2%;
     }
 
-    .weprovide2-heading{
+    .weprovide2-heading {
         width: 67%;
     }
 
@@ -728,6 +727,7 @@ svg {
         display: flex;
         flex-direction: column;
     }
+
     .grid-container {
         padding-top: 5%;
         grid-template-columns: 14% 78%;
@@ -792,6 +792,7 @@ svg {
         width: 100%;
         padding-top: 10px;
     }
+
 }
 
 .weour-container {
@@ -808,10 +809,17 @@ svg {
     margin-left: auto;
 }
 
+@media(min-width:1025px) {
+    .weour-container {
+        padding: 2% 0% 0% 0%;
+    }
+}
+
 @media(max-width:1025px) {
     .weour-container {
         padding: 6% 2% 3% 2%;
     }
+
     .weourtext {
         width: 34%;
     }
@@ -821,6 +829,7 @@ svg {
     .weour-container {
         padding: 9% 4% 0% 4%;
     }
+
     .weourtext {
         width: 45%;
     }
@@ -1007,9 +1016,11 @@ svg {
         text-align: center;
         padding: 2% 0% 6% 0%;
     }
-    .subscribe-section-heading { 
+
+    .subscribe-section-heading {
         width: 45%;
     }
+
     .subscribe-section-paragraph {
         width: 46%;
     }
@@ -1020,9 +1031,11 @@ svg {
         text-align: center;
         padding: 2% 0% 1% 0%;
     }
+
     .subscribe-section-heading {
         width: 69%;
     }
+
     .subscribe-section-paragraph {
         padding-bottom: 5%;
         width: 55%;
@@ -1203,20 +1216,29 @@ footer a {
     line-height: 80px;
 }
 
+@media(min-width:1025px) {
+    .footerlinks {
+        padding: 2% 0%;
+    }
+}
 
 @media(max-width:1025px) {
     .footerblock i {
         font-size: 21px;
     }
+
     .footerblock {
         flex: 1;
     }
+
     .firstblock-paragraph {
         width: 84%;
     }
+
     .firstblock {
         flex: 3;
     }
+
     .lastblock {
         flex: 1.9;
     }
@@ -1226,9 +1248,11 @@ footer a {
     .footerlinks {
         padding: 5% 0% 0% 0%;
     }
+
     .firstblock-paragraph {
         width: 100%;
     }
+
     .footericoncontainer {
         padding-top: 0px;
     }
