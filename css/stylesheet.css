@@ -269,7 +269,7 @@ nav a {
     width: 29%;
 }
 
-@media(min-width: 1500px) {
+@media(min-width: 2000px) {
     .benefits-container {
         padding: 3% 0%;
     }
@@ -1164,12 +1164,12 @@ footer {
 .luxtext {
     padding-top: 28px;
     color: #bbbbbb;
+    font-size: 14px;
 }
 
 footer a {
     text-decoration: none;
     color: #bbbbbb;
-    font-size: 14px;
     display: block;
     line-height: 40px;
 }
@@ -1185,7 +1185,6 @@ footer a {
     padding: 24px 18px 0px 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    font-size: 80%;
     flex: 1.5;
 }
 
@@ -1195,7 +1194,7 @@ footer a {
 }
 
 .firstblock-paragraph {
-    width: 59%;
+    width: 69%;
 }
 
 .lastblock {
@@ -1216,7 +1215,7 @@ footer a {
     line-height: 80px;
 }
 
-@media(min-width:1025px) {
+@media(min-width:2000px) {
     .footerlinks {
         padding: 2% 0%;
     }
@@ -1291,13 +1290,12 @@ footer a {
 
     .luxtext {
         padding-top: 3px;
-        padding-bottom: 9px;
-        font-size: x-small;
+        padding-bottom: 2px;
+        font-size: xx-small;
     }
 
     footer a {
-        line-height: 20px;
-        font-size: small;
+        line-height: 16px;
     }
 
     .footericoncontainer {
