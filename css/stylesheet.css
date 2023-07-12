@@ -718,7 +718,7 @@ nav a {
 }
 
 #weprovide2image {
-    height: 642px;
+    height: auto;
     width: 550px;
     padding-top: 33px;
 }
@@ -735,7 +735,7 @@ nav a {
     }
 
     #weprovide2image {
-        height: 642px;
+        height: auto;
         padding-top: 64px;
     }
 }
@@ -1014,7 +1014,6 @@ nav a {
         font-size: 48%;
         width: 64%;
     }
-
 }
 
 .textfieldcontainer {
