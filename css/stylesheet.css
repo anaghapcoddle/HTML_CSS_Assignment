@@ -405,9 +405,13 @@ nav a {
     padding: 10% 0% 6% 0%;
 }
 
-#weprovide1image {
+.weprovide2-image-container {
     height: auto;
-    width: 40%;
+    width: 100%;
+}
+
+#weprovide1image{
+    width: 100%;
 }
 
 #weprovtext {
@@ -460,7 +464,7 @@ nav a {
         padding: 10% 1% 6% 2%;
     }
 
-    #weprovide1image {
+    .weprovide2-image-container {
         width: 47%;
     }
 
@@ -475,12 +479,16 @@ nav a {
 
     .weprovnum {
         padding-top: 0%;
-        grid-template-columns: 30% 30% 30%;
     }
 }
 
 @media(max-width:1000px) {
     #weprovide1image {
+        height: auto;
+        width: 49%;
+    }
+
+    .weprovide2-image-container {
         height: auto;
         width: 49%;
     }
@@ -526,6 +534,11 @@ nav a {
     }
 
     #weprovide1image {
+        height: auto;
+        width: 100%;
+    }
+
+    .weprovide2-image-container {
         height: auto;
         width: 100%;
     }
